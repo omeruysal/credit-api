@@ -6,6 +6,11 @@ Unit tests are under the test folder.
 To be able to call the endpoint you need to be logged in first. 
 If you use the postman collection which attached to the repo, you would not need to grab the token and add it to header. Test script handles it automatically. You just need to be logged in with one of these users below, then execute endpoints.
 
+
+Admin can reach every endpoint.
+Regular users can reach only Authenticate, Get Loan, Get Loan Installments and Pay Loan endpoint.
+Users can execute only operations with related with them. Example user Ali can not pay or see user Veli's debts.
+
 Admin email : omer@outlook.com passowrd: 12345
 
 User email : ali@outlook.com password: 12345
@@ -24,8 +29,6 @@ Or you can go to root directory of project and open the console and run the comm
 
 ## Endpoints:
 The project runs on port 8080 as default.
-Admin can reach every endpoint.
-Regular users can reach only Authenticate, Get Loan, Get Loan Installments and Pay Loan endpoint.
 
 Authenticate - HTTP Request type : POST
 Endpoint : localhost:8080/api/auth
