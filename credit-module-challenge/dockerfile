@@ -1,0 +1,7 @@
+FROM openjdk:17-jdk-slim
+
+WORKDIR /app
+
+COPY target/credit-module-challenge-0.0.1-SNAPSHOT.jar application.jar
+
+ENTRYPOINT ["java", "-jar", "application.jar"]
